@@ -1,0 +1,1 @@
+export let cardata= JSON.parse(localStorage.getItem('cars'))||[];

@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #3498db;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Container for the Converter */
+.converter-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.converter-container p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Input and Select Styling */
+input[type="number"],
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+    width: 140px;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+select {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button.Convert {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.Convert:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Styling */
+.result {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .converter-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    input[type="number"],
+    select {
+        width: 100px;
+    }
+
+    button.Convert {
+        width: 100%;
+    }
+}

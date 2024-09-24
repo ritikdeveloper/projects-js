@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cars Plus</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../Css/homepage.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <label for="vehicle">Select Car Company</label>
+      <select class="cars-company" name="vehicle">
+      </select>
+  
+      <label for="car-model">Select Car Model</label>
+      <select class="cars-model" name="car-model">
+        <option value="">Select a model</option>
+      </select>
+  
+      <input type="date" class="cars-date" placeholder="Enter Car Buying date">
+  
+      <button class="save-button">Save</button>
+    </div>
+  
+    <script type="module" src="../scripts/homepage.js"></script>  
+  </body>
+  
+  </html>
